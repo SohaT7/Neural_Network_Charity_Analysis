@@ -20,9 +20,7 @@ The neuron rule of thumb says that the neurons selected for the hidden layer mus
 
 - Were you able to achieve the target model performance? Unfortuantely, the target model performance could not be reached. The accuracy for the model was 73.3%, and the 4 optimization attempts resulted in 71.07%, 71.07%, 71.02%, and 70.97% accuracy levels, respectively. 
 
-- What steps did you take to try and increase model performance?
-
-We tried optimizing our model performance and made 4 attempts with the following specification changes:
+- What steps did you take to try and increase model performance? We tried optimizing our model performance and made 4 attempts with the following specification changes:
     - Attempt 0: Added neurons to the 2 hidden layers (80 increased to 120; 30 increased to 70).
     - Attempt 1: Added neurons to the 2 hidden layers (80 increased to 100; 30 increased to 50) and changed activation function on output layer to tanh.
     - Attempt 2: (Experiment) Reduced neurons in the 2 hidden layers (80 decreased to 30; 30 to 20).
