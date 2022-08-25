@@ -30,7 +30,7 @@ The neuron rule of thumb says that the neurons selected for the hidden layer mus
     - Attempt 3: Added neurons to the 2 hidden layers (80 increased to 100; 30 increased to 50) and added a third layer with 10 neurons only.
 
 ## Summary
-To summarize, our deep learning model did not reach the ideal of an accuracy rate of 75%. The activation function tanh was used on the output layer during an optimization attempt, since tanh is known to be good when working with binary classifications with nonlinear data. However, that did not yield any better results. Since our model is trying to predict a binary classification, we can try using a supervised learning model instead: the Random Forest Classifier. It is not only high when it comes to interpretability but also might bring us higher accuracy rates.
+To summarize, our deep learning model did not reach the ideal of an accuracy rate of 75%. The activation function tanh was used on the output layer during an optimization attempt, since tanh is known to be good when working with binary classifications with nonlinear data. However, that did not yield any better results. Since our model is trying to predict a binary classification, we can try using a supervised learning model instead: the Random Forest Classifier. It is not only highly interpretable but also might bring us higher accuracy rates.
 
 ## Contact Information
 Email: st.sohatariq@gmail.com
