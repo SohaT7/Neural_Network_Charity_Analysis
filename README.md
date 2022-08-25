@@ -3,6 +3,9 @@
 ## Overview of the Loan Prediction Analysis
 The purpose of this analysis was to determine which charitable donations were being successfully utilized by the receiver. This analysis employs deep-learning neural networks in order to help achieve that goal.
 
+### Tools Used:
+Python (TensorFlow)
+
 ## Results
 ### Data Preprocessing:
 
@@ -28,3 +31,6 @@ The neuron rule of thumb says that the neurons selected for the hidden layer mus
 
 ## Summary
 To summarize, our deep learning model did not reach the ideal of an accuracy rate of 75%. The activation function tanh was used on the output layer during an optimization attempt, since tanh is known to be good when working with binary classifications with nonlinear data. However, that did not yield any better results. Since our model is trying to predict a binary classification, we can try using a supervised learning model instead: the Random Forest Classifier. It is not only high when it comes to interpretability but also might bring us higher accuracy rates.
+
+## Contact Information
+Email: st.sohatariq@gmail.com
