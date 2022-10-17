@@ -52,7 +52,7 @@ The file [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Ch
 #### Density Plots and Binning
 The unique values for each column are determined. If the unique values exceed 10 in number, a density plot is created to determine the distribution of the column values. The density plot is then used to determine a cutoff point, which allows the 'rare' values to be binned into the 'Other' column. As an example, this process for the feature variable 'APPLICATION_TYPE' is shown below.
 
-<img width="700" alt="image" src="https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/Images/binning_example.png"> 
+<img width="650" alt="image" src="https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/Images/binning_example.png"> 
 
 #### Encoding Categorical Variables
 A list for categorical variables is generated. The categorical variables are then one-hot encoded, and placed into a new DataFrame. This DataFrame and the orginal DataFrame are then merged, and the originals dropped.
@@ -68,7 +68,7 @@ Scikit-Learn's StandardScaler class is used to standardize the numerical values.
 ### Compiling, Training, and Evaluating the Model
 This model (code can be found in the [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) file) starts off with two hidden layers containing 80 and 30 neurons respectively. This is because the data contains 42 features variables after preprocessing and the 'neuron rule of thumb' says that the neurons selected for the hidden layer must be two or three times larger than the number of features variables (42 * 2 = 84; rounding it off gives us 80). The following layer should have a lower number, hence 30. The activation function ReLU was used for the hidden layers, and sigmoid for the output layer since the outer layer is a binary classified layer. The loss function used is 'binary_crossentropy' and the optimizer used is 'adam'.
 
-<img width="700" alt="image" src="https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/Images/model_code.png">
+<img width="800" alt="image" src="https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/Images/model_code.png">
 
 The model is then trained (or 'fit') using the training set. A callback is created which saves the model's weights every 5 epochs. The model is evaluated by using the test data to determine its accuracy and loss. The results are saved and exported to an HDF5 file.
 
