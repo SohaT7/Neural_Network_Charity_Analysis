@@ -42,18 +42,12 @@ The dataset has metadata on each organization in the following columns:
  - Python (TensorFlow, Pandas, and Scikit-Learn libraries)
 
 ### Description:
-The purpose of this project (code to be found in the file [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) is to design a neural network (a deep learning model) to create a binary classification model that can predict if an organization that receives donations will be succesful in utilizing the donations in an impactful way or not. 
-
-The data is preprocessed: the target and features variables are determined, density plots are created to successfully bin the unique values, the categorical variables are encoded, and the data is split followed by standardizing the numerical variables. Next, the deep learning model is designed by assigning the number of hidden layers to be used, the number of neurons in each hidden layer, and the activation functions to be used by the hidden and outer layers.
+The purpose of this project (code to be found in the [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) file) is to design a neural network (a deep learning model) to create a binary classification model that can predict if an organization that receives donations will be succesful in utilizing the donations in an impactful way or not. The data is preprocessed: the target and features variables are determined, density plots are created to successfully bin the unique values, the categorical variables are encoded, and the data is split followed by standardizing the numerical variables. Next, the deep learning model is designed by assigning the number of hidden layers to be used, the number of neurons in each hidden layer, and the activation functions to be used by the hidden and outer layers.
 
 ## Results
 ### Preprocessing Data for a Neural Network Model
 #### Determining the Target and Features Variables
-The file [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) shows how the data in [charity_data.csv](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/charity_data.csv) is read into a Pandas DataFrame, and then preprocessed.
-
-The variables 'EIN' and 'NAME' are removed from the input data for they are neither target nor features variables, and do not add anything useful for our purposes.
-
-The target variable is 'IS_SUCCESSFUL' which tells us if the charitable donation was successfully utilized by the receiving organization or not. The features variables are: 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', and 'ASK_AMT'.
+The file [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) shows how the data in [charity_data.csv](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/charity_data.csv) is read into a Pandas DataFrame, and then preprocessed. The variables 'EIN' and 'NAME' are removed from the input data for they are neither target nor features variables, and do not add anything useful for our purposes. The target variable is 'IS_SUCCESSFUL' which tells us if the charitable donation was successfully utilized by the receiving organization or not. The features variables are: 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', and 'ASK_AMT'.
 
 #### Density Plots and Binning
 The unique values for each column are determined. If the unique values exceed 10 in number, a density plot is created to determine the distribution of the column values. The density plot is then used to determine a cutoff point, which allows the 'rare' values to be binned into the 'Other' column. As an example, this process for the feature variable 'APPLICATION_TYPE' is shown below.
