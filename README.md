@@ -44,7 +44,7 @@ The dataset has metadata on each organization in the following columns:
 ### Description:
 The purpose of this project (code to be found in the file [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) is to design a neural network (a deep learning model) to create a binary classification model that can predict if an organization that receives donations will be succesful in utilizing the donations in an impactful way or not. 
 
-The data is preprocessed: the target and features variables are determined, density plots are created to successfully bin the unique values, the categorical variables are encoded, and the data is split followed by standardizing the numerical variables. Next, the deep learning model is designed by assigning the number of hidden layers to be used, the number of neurons in each hidden layer, and the activation functions to be used by the hidden and outer layers. The results are saved in an output file [AlphabetSoupCharity.h5](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.h5).
+The data is preprocessed: the target and features variables are determined, density plots are created to successfully bin the unique values, the categorical variables are encoded, and the data is split followed by standardizing the numerical variables. Next, the deep learning model is designed by assigning the number of hidden layers to be used, the number of neurons in each hidden layer, and the activation functions to be used by the hidden and outer layers.
 
 ## Results
 ### Preprocessing Data for a Neural Network Model
@@ -76,14 +76,14 @@ This model (code can be found in the [AlphabetSoupCharity.ipynb](https://github.
 
 <img width="700" alt="image" src="https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/Images/model_code.png">
 
-The model is then trained (or 'fit') using the training set. A callback is created which saves the model's weights every 5 epochs. The model is evaluated by using the test data to determine its accuracy and loss. The results are saved and exported to an HDF5 file [AlphabetSoupCharity.h5](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.h5).
+The model is then trained (or 'fit') using the training set. A callback is created which saves the model's weights every 5 epochs. The model is evaluated by using the test data to determine its accuracy and loss. The results are saved and exported to an HDF5 file.
 
 ### Optimizing the Model
 The model has an accuracy level of 73.3%. Four attempts to optimize the model were made with the following specification changes:
- - Attempt 0 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_0.ipynb)] [[output](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization_0.h5)]: Added neurons to the 2 hidden layers (80 increased to 120; 30 increased to 70).
- - Attempt 1 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_1.ipynb)] [[output](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization_1.h5)]: Added neurons to the 2 hidden layers (80 increased to 100; 30 increased to 50) and changed activation function on output layer to tanh.
- - Attempt 2 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_2.ipynb)] [[output](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization_2.h5)]: (Experiment) Reduced neurons in the 2 hidden layers (80 decreased to 30; 30 to 20).
- - Attempt 3 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_3.ipynb)] [[output](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization_3.h5)]: Added neurons to the 2 hidden layers (80 increased to 100; 30 increased to 50) and added a third layer with 10 neurons only.
+ - Attempt 0 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_0.ipynb)]: Added neurons to the 2 hidden layers (80 increased to 120; 30 increased to 70).
+ - Attempt 1 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_1.ipynb)]: Added neurons to the 2 hidden layers (80 increased to 100; 30 increased to 50) and changed activation function on output layer to tanh.
+ - Attempt 2 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_2.ipynb)]: (Experiment) Reduced neurons in the 2 hidden layers (80 decreased to 30; 30 to 20).
+ - Attempt 3 [[code](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization-Attempt_3.ipynb)]: Added neurons to the 2 hidden layers (80 increased to 100; 30 increased to 50) and added a third layer with 10 neurons only.
     
 Unfortunately, none of these four attempts yielded higher accuracy levels for the model. The accuracy scores for these four attempts are as follows:
  - Attempt 0: 71.07%
