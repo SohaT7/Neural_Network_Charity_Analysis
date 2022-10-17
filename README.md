@@ -49,7 +49,9 @@ The data is preprocessed: the target and features variables are determined, dens
 ## Results
 ### Preprocessing Data for a Neural Network Model
 #### Determining the Target and Features Variables
-The data in [charity_data.csv](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/charity_data.csv) is read into a Pandas DataFrame. The variables 'EIN' and 'NAME' are removed from the input data for they are neither target nor features variables, and do not add anything useful for our purposes.
+The file [AlphabetSoupCharity.ipynb](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb) shows how the data in [charity_data.csv](https://github.com/SohaT7/Neural_Network_Charity_Analysis/blob/main/charity_data.csv) is read into a Pandas DataFrame, and then preprocessed.
+
+The variables 'EIN' and 'NAME' are removed from the input data for they are neither target nor features variables, and do not add anything useful for our purposes.
 
 The target variable is 'IS_SUCCESSFUL' which tells us if the charitable donation was successfully utilized by the receiving organization or not. The features variables are: 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', and 'ASK_AMT'.
 
